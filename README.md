@@ -1,5 +1,5 @@
 # Banking-System
-A time and space efficient menu driven Banking System implementation using c that can read input from the user is safer way and uses a hash table for searching and delete record : 
+A time and space efficient menu driven Banking System implementation using c that can read input from the user in safer way and uses a hash table for searching and deleting record : 
 1. Use a hash table for searching and deleting records - A hash table is a data structure that allows for quick searching and deleting of records. By using a hash table, you can reduce the time complexity of these operations to O(1) on average.
 
 2. Implement a menu-driven interface - A menu-driven interface allows users to interact with the system by selecting options from a menu. This approach is intuitive and user-friendly, and it also helps to reduce the likelihood of user input errors.
