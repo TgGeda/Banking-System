@@ -49,7 +49,26 @@ Account *search(Node *table[], int account_number) {
     return NULL;
 }
 
-// Delete account from hash table
+/*
+This code defines a function called "delete" that takes in an array of Node pointers called "table" and an integer called "account_number". 
+The function is used to delete a node with a key value of "account_number" from the hash table.
+
+The function first calculates the index of the hash table where the node with the given account number is located using the "hash" function.
+It then initializes two Node pointers, "node" and "prev", to NULL.
+
+A while loop is used to traverse the linked list at the calculated index. 
+The loop continues until the end of the linked list is reached or a node with a matching key value is found.
+If a node with a matching key value is found, the function removes it from the linked list.
+
+If the node to be deleted is the first node in the linked list,
+the "prev" pointer remains NULL, and the "next" pointer of the node to be deleted becomes the new head of the linked list. 
+If the node to be deleted is not the first node in the linked list, 
+the "next" pointer of the previous node is set to the "next" pointer of the node to be deleted.
+
+After the node is removed from the linked list, 
+the memory allocated for it is freed using the "free" function, and the function returns.
+*/
+//Delete account from hash table
 void delete(Node *table[], int account_number) {
     int key = account_number;
     int index = hash(key);
