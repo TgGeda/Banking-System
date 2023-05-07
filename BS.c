@@ -1,4 +1,4 @@
-Here is an implementation of a menu-driven banking system using C that incorporates these guidelines:
+Here is an implementation of a menu-driven banking system using C  
 
 #include <stdio.h>
 #include <stdlib.h>
